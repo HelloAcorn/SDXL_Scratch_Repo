@@ -16,7 +16,7 @@ refiner = DiffusionPipeline.from_pretrained(
 ).to("cuda")
 
 # 동물 리스트
-animals = ["rabbit", "cat", "dog", "panda", "raccoon", "hedgehog", "squirrel", "duck", "hamster"]
+animals = ["hedgehog", "ferret", "guinea pig", "red panda", "baby elephant", "baby hippo", "baby giraffe", "lion cub", "baby panda"]
 prompts_template = "{}, crying a starry night, sad, content, forest background"
 negative_prompt = "multiple tails, more than one tail, two tails, extra tails, three ears, four ears, extra ears, more than two ears, distorted body, misshapen body, disproportionate body, irregular body, twisted body, warped body, unnatural body"
 steps = 35
@@ -50,4 +50,4 @@ grid_image = make_image_grid(images, rows=3, cols=3)
 grid_image.show()
 
 # 이미지 저장
-grid_image.save("cute_animals_grid.png")
+grid_image.save("./Img/AnimalGrid6.png")
